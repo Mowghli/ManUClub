@@ -1,0 +1,26 @@
+﻿
+
+/*splash */
+
+html,body{height:100%;direction:ltr}
+body{text-align:center;margin:9px;font-size:80%;font-family:arial,helvetica,sans-serif;background:#000}
+div,a,ul,li,p,h1,h2,h3,h4,form,label,blockquote{margin:0;padding:0}h3{height:19px;line-height:19px;overflow:hidden;padding-left:9px;padding-right:7px;color:#fff;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#fff;background:url(bg_title.gif) 0 0 repeat-x scroll #000}
+h3 a{display:block;text-decoration:none;color:#fff;margin:0 -12px;padding:0 10px}h7{text-align:justify;margin:9px;font-size:120%;font-family:arial,helvetica,sans-serif;color:White;}
+img{border:0}a{color:#505050}a:hover{color:#c60000}a:focus{outline:0}h1{clear:both;font-size:1.4em;margin-bottom:.5em;line-height:90%}
+h2{font-size:1em;float:none;margin-bottom:.5em;clear:left}h1 em{color:#c60000;font-style:normal}
+thead th{color:#fff;background:none 50% 0 repeat-x scroll #c70101}tbody{color:#848484;text-align:center}
+tfoot{height:1px}tbody th{font-weight:bold;text-align:center}fzmessages ul{list-style-type:none}
+#horizon{position:absolute;min-width:967px;text-align:center;margin-top:-125px;width:100%;top:35%;left:0}
+#tablecontainer{margin:0 auto;width:967px;height:530px;background:url(bg_body.jpg) 50% 100% no-repeat #000}
+#bottomcontainer{margin:0 auto;width:967px;height:117px}#container1{position:relative;margin:0 auto;width:967px;height:273px;background:url(bg_main_div.gif) no-repeat ;}
+#logo{margin-top:1px;width:160px;float:left;margin-left:1px;display:block}#sections{margin-top:1px ;width:805px;float:left}
+#flags{margin-top:59px;float:right}#flags div{float:left}.imgRight{margin-right:1px}
+#nojs{float:left;display:block}#nojs a{display:inline;float:left;border:0;margin-right:1px;margin-bottom:1px}
+#nojs a img{border:0;margin:0}a img{opacity:.85}a:hover img{opacity:1}#facebookJoin{display:block;width:295px;z-index:4;position:relative;top:8px;left:5px}
+#leftPatch{display:block;position:absolute;z-index:3;width:53px;height:50px;margin-left:-47px;margin-top:-13px;background-color:black}
+#divFBIframe{display:block;width:295px;z-index:1;position:absolute;margin-left:-45px;top:52px}
+#divWhiteBar{display:block;width:295px;height:25px;z-index:0;position:relative;top:12px;left:8px;background:url(/pix/splashPage/white_bar.jpg) no-repeat}
+h3 em{font-style:normal}#socialBar a.nike{cursor:pointer;height:45px;width:100%}
+#socialBar{display:block;position:relative;z-index:0;width:967px;height:40px;top:1px;background:0 0 no-repeat scroll transparent}
+socialitemlink{width:100%}#socialBar a{width:25px;height:25px;display:block}
+.socialIcons{float:left;margin-top:8px;margin-left:4px}#topcontainer{margin:0 auto;width:967px;height:117px;background:url(bg_splash_top.jpg) 50% 100% no-repeat #000}

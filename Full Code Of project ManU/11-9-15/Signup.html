@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>United FC</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+function validation()
+{
+var a = document.form.login.value;
+var pos = a.indexOf("@");
+var p = a.indexOf(".");
+if(a=="")
+{
+alert("Please Enter Your Username or Email");
+document.form.login.focus();
+return false;
+}
+if(pos==-1)
+{
+alert("Please Enter valid username");
+document.form.login.select();
+return false;
+}
+if(p==-1)
+{
+alert("Please Enter valid email id like .com");
+document.form.login.select();
+return false;
+}
+if(pos>=p)
+{
+alert("Please enter result properly");
+document.form.login.select();
+return false;
+}
+if(pos+1>=p)
+{
+alert("Please enter result properly man");
+document.form.login.select();
+return false;
+}
+
+if ((a.length < 5) || (a.length > 15))
+{
+alert("Your Character must be 5 to 15 Character");
+document.form.login.select();
+return false;
+}
+document.addEventListener("DOMContentLoaded", function() {
+
+    // JavaScript form validation
+
+    var checkPassword = function(str)
+    {
+      var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+      return re.test(str);
+    };
+
+    var checkForm = function(e)
+    {
+      if(this.username.value == "") {
+        alert("Error: Username cannot be blank!");
+        this.username.focus();
+        e.preventDefault(); // equivalent to return false
+        return;
+      }
+      re = /^\w+$/;
+      if(!re.test(this.username.value)) {
+        alert("Error: Username must contain only letters, numbers and underscores!");
+        this.username.focus();
+        e.preventDefault();
+        return;
+      }
+      if(this.pwd1.value != "" && this.pwd1.value == this.pwd2.value) {
+        if(!checkPassword(this.pwd1.value)) {
+          alert("The password you have entered is not valid!");
+          this.pwd1.focus();
+          e.preventDefault();
+          return;
+        }
+      } else {
+        alert("Error: Please check that you've entered and confirmed your password!");
+        this.pwd1.focus();
+        e.preventDefault();
+        return;
+      }
+      alert("Both username and password are VALID!");
+    };
+
+    var myForm = document.getElementById("myForm");
+    myForm.addEventListener("submit", checkForm, true);
+
+    // HTML5 form validation
+
+    var supports_input_validity = function()
+    {	
+      var i = document.createElement("input");
+      return "setCustomValidity" in i;
+    }
+
+    if(supports_input_validity()) {
+      var usernameInput = document.getElementById("field_username");
+      usernameInput.setCustomValidity(usernameInput.title);
+
+      var pwd1Input = document.getElementById("field_pwd1");
+      pwd1Input.setCustomValidity(pwd1Input.title);
+
+      var pwd2Input = document.getElementById("field_pwd2");
+
+      // input key handlers
+
+      usernameInput.addEventListener("keyup", function() {
+        usernameInput.setCustomValidity(this.validity.patternMismatch ? usernameInput.title : "");
+      }, false);
+
+      pwd1Input.addEventListener("keyup", function() {
+        this.setCustomValidity(this.validity.patternMismatch ? pwd1Input.title : "");
+        if(this.checkValidity()) {
+          pwd2Input.pattern = this.value;
+          pwd2Input.setCustomValidity(pwd2Input.title);
+        } else {
+          pwd2Input.pattern = this.pattern;
+          pwd2Input.setCustomValidity("");
+        }
+      }, false);
+
+      pwd2Input.addEventListener("keyup", function() {
+        this.setCustomValidity(this.validity.patternMismatch ? pwd2Input.title : "");
+      }, false);
+
+    }
+
+  }, false);}	
+</script>
+</head>
+<body>
+<div id="bleft">
+<img src="p.gif" alt="Computer man" style="width:120px;height:600px;float:centre;">
+	</br>
+  <img src="LeftNavAd.gif" alt="Computer man" style="width:120px;height:200px;float:centre;">
+  </br>
+  <img src="bpll.jpg" alt="Computer man" style="width:120px;height:100px;float:centre;">
+  </br></div>
+<div id="bright">  <img src="bofy.gif" alt="Computer man" style="width:120px;height:600px;float:left;"></br>
+<img src="side.gif" alt="Computer man" style="width:120px;height:100px;float:centre;">
+	</br>
+  <img src="side1.gif" alt="Computer man" style="width:120px;height:100px;float:centre;">
+  </br>
+  <img src="12.gif" alt="Computer man" style="width:120px;height:100px;float:centre;">
+  </br></div>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <!-- Begin Header -->
+  <div id="header">
+    <h1></h1>
+  </div>
+  <!-- End Header -->
+  <!-- Begin Navigation -->
+  <div id="navtop">
+    <ul>
+      <li><a href="FAQ.html">FAQs</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+	  <li><a href="Signup.html">Signup</a></li>
+	  <li><a href="Login.html">Login</a></li>
+   
+    </ul>
+  </div>
+  <!-- End Navigation -->
+  <!-- Begin Left Column -->
+  <div id="leftcolumn">
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">> Home</a></li>
+				<li><a href="news.html">> News</a></li>
+
+        <li><a href="Team.html">> Team</a></li>
+        <li><a href="Fixtures.html">> Fixtures</a></li>
+        <li><a href="Gallery.html">> Gallery</a></li>
+        <li><a href="History.html">> Club History</a></li>
+		<li><a href="Stad.html">> Stadium</a></li>
+      </ul>
+    </div>
+    <div class="tableleft">
+      <h3>Season 2014-15</h3>
+      <p> <strong>Sunday 13 May 2014</strong> <br />
+        Man Utd 8 - 2 Arsenal </p>
+      <h4>Tables</h4>
+      <table width="164" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="18"><strong>#</strong></td>
+          <td><strong>Team</strong></td>
+          <td width="30"><div align="center"><strong>P</strong></div></td>
+          <td width="30"><div align="center"><strong>Pts</strong></div></td>
+        </tr>
+        <tr class="yourteam">
+          <td width="18">1</td>
+          <td>Man Utd </td>
+          <td width="30"><div align="center">38</div></td>
+          <td width="30"><div align="center">89</div></td>
+        </tr>
+        <tr class="otherteam">
+          <td width="18">2</td>
+          <td>Chelsea </td>
+          <td width="30"><div align="center">38</div></td>
+          <td width="30"><div align="center">83</div></td>
+        </tr>
+        <tr class="yourteam">
+          <td width="18">3</td>
+          <td>Liverpool </td>
+          <td width="30"><div align="center">38</div></td>
+          <td width="30"><div align="center">68</div></td>
+        </tr>
+        <tr class="otherteam">
+          <td width="18">4</td>
+          <td>Arsenal</td>
+          <td width="30"><div align="center">38</div></td>
+          <td width="30"><div align="center">68</div></td>
+        </tr>
+        <tr class="otherteam">
+          <td width="18">5</td>
+          <td>Spurs</td>
+          <td width="30"><div align="center">38</div></td>
+          <td width="30"><div align="center">60</div></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- End Left Column -->
+  <!-- Begin Right Column -->
+	<div id="maincolumn">
+    <h1></h1>
+    <p></p>
+	<section class="container">
+    <div class="login">
+      <h1>Sign up to Web App</h1>
+	  <div class="img"> <a target="_blank" href="signup.html"><img src="images/new/sub.gif" alt="Sir Alex Statue" width="375" height="250" style="float:right"></a></div>	
+	  <h7><b>Simply fill in the form on this page to access all of our official news and exclusive features, such as behind the scenes, content, videos, downloads, tickets and much more...</b></h7>
+      <form name="form" method="post" id="myForm" >
+        <p><input type="text" id="field_username"  title="Username must not be blank and contain only letters, numbers and underscores." name="login" value="" placeholder="Username" required pattern="\w+"></p>
+		<p><input type="email" name="login" value="" placeholder="Email" required></p>
+        <p><input type="password" id="field_pwd1"  name="password" value="" placeholder="Password"  title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1"></p>
+		<p><input type="password" id="field_pwd2" name="password" value="" title="Please enter the same Password as above."  placeholder="Confirm Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2"></p>
+        <p class="remember_me">
+          <label>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            <h7>Remember me on this computer</h7>
+          </label>
+        </p>
+        <p class="submit"><input type="submit" name="commit" value="Sign Up"></p>
+      </form>
+    </div>
+
+    <div class="login-help">
+      <h7>Already a Member? <a href="Login.html">Click here to Login</a>.</h7>
+    </div>
+  </section>
+	
+  </div>
+  <!-- End Right Column -->
+  <div class="clear"></div>
+  <div id="footer"> &copy; Copyright 2015 by WebTech | Design by Parth And Amogh </div>
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

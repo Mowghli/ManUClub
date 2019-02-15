@@ -1,0 +1,249 @@
+﻿/* LAYOUT */
+
+* { padding: 0; margin: 0; }
+
+body { background:transparent url(images/bui.jpg) no-repeat center; background-attachment: fixed;color: black; font: normal 11px/18px verdana, arial, helvetica, sans-serif; margin-bottom: 10px; background-size:100% 100%; }
+
+#wrapper { background: repeat-y 0% 0%; border-bottom: 1px solid #280000; margin: 0 auto; width: 1000px; }
+
+#header { background: transparent url(images/67.jpg) no-repeat ; width: 1000px; height: 125px; position: relative; display:inline-middle; }
+
+#header h1 { background-color: transparent; font: 35px/35px georgia, times new roman, times, serif; letter-spacing: 2px;}
+
+#leftcolumn { display: inline; width: 200px; float: left; background: transparent; }
+
+#maincolumn { background: none no-repeat top right; float: right; width: 760px; padding: 10px 20px 20px 0; display: inline; }
+
+#maincolumn p { padding-bottom: 15px; }
+
+#footer { color: #e5f5e5; background-color: transparent; padding: 10px 0 15px 0; height: 30px; text-align: center; }
+
+#footer a { background-color: none; padding: 0; color: #000000; text-decoration: underline; outline: none; }
+
+#footer a:hover { color: #eee8aa; text-decoration: underline; }
+
+.clear { clear: both; background: none; }
+
+/* NAVIGATION TOP */
+
+#navtop ul { padding: 0; margin: 0 0 0 0; background: transparent no-repeat; float: right; width: 100%; }
+
+* html #navtop ul { width: 100%; }
+
+#navtop ul li { display: inline; }
+
+#navtop ul li a { background-image: none; padding: 3px 10px 3px 20px; color: #e5f5e5; text-decoration: none; float: right; text-transform: uppercase; outline: none; }
+
+#navtop ul li a:hover { color: #eee8aa; text-decoration: underline; }
+
+#navigation { width: 175px; }
+
+/* NAVIGATION LEFT */
+
+#navigation ul { margin-right: 4px; padding-left: 0; list-style-type: none; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; }
+
+#navigation a { background-image: none; display: block; padding: 5px 3px 5px 7px; width: 165px; background-color: transparent; border-bottom: solid black ; outline: none; }
+
+#navigation a:link,#navigation a:active,#navigation a:visited  { color: white; text-decoration: none; }
+
+#navigation a:hover { background-color: #000000; border-bottom: solid #000000; color: #eee8aa; }
+
+/* SITE STYLES */
+
+#maincolumn h1 { background: url(images/trophy.png) no-repeat 0% 5px;color: #ffffff;font-weight: bold;
+font: 20px/42px Sans-serif; letter-spacing: 2px; padding-left: 36px;}
+
+#maincolumn h2, #maincolumn h3 { background-color: #FFCC00; font: bold red 16px/22px georgia, times new roman, times, serif; letter-spacing: 2px; border-top: 1px solid #363636; border-bottom: 1px solid #363636; margin-bottom: 10px; padding-left: 5px;}
+
+#maincolumn h4, #maincolumn h5, #maincolumn h6 { font: bold 11px/18px verdana, arial, helvetica, sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #ffffff}
+#maincolumn h7 {color: #ffffff}
+
+a, a:link, a:active, a:visited { background: url(images/link.gif) no-repeat 0% 2px; color: #ffffff; font-weight: bold; outline: none; padding-left: 0px; text-decoration: underline; }
+
+a:hover { color: #ff8c00; text-decoration: none; }
+
+div.news { background: url(images/h2_line.gif) repeat-x 0% 15px; text-align: center;}
+
+div.news p { text-align: left; color: white; }
+
+div.news a, div.news a:link, div.news a:active, div.news a:visited { background: url(images/page.gif) no-repeat 0% 0%; color: #ffffff; padding: 0 0 5px 21px; }
+
+div.news a:hover { color: #999; text-decoration: none; }
+
+div.news strong { color: #280000; font: normal 16px/32px georgia, times new roman, times, serif; letter-spacing: 2px; background-color: #FFCC00; padding: 0 5px 0 5px;border-top: 1px solid #363636; border-bottom: 1px solid #363636; }
+
+div.tableleft { font-size: 10px; margin: 10px 0 10px 10px; color: white;}
+
+div.tableleft table { border: 1px solid black; margin-top: 5px; color:white;}
+
+div.tableleft td { padding: 0 0 0 2px; color: white;background-color: transparent; }
+
+/*div.tableleft .yourteam { background-color: red; color: #FFCC00; }
+
+div.tableleft .otherteam { background-color: #fff;color:#000000 }*/
+
+#leftcolumn h3 { font: bold 11px/18px verdana,arial, helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; margin: 10px 0 10px 0; color : white;}
+
+#leftcolumn h4 { background: no-repeat left 6px; margin: 10px 5px 0 0; font: bold 11px/18px verdana,arial, helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; text-align: right; border-top: 1px solid #ffffff; padding-top: 5px; color: white;}
+
+
+.navbar	{
+	height: 0px;
+        padding: 0;
+	margin: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	border-right: 1px solid #000000; 
+	}
+	#wrap	{
+	width: 100%; /* Spans the width of the page */
+	height: 40px; 
+	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: relative; 
+	background-color: #000000;
+	}
+	.navbar li 	{
+			height: auto;
+			width: 90px;  /* Each menu item is 150px wide */
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: center;  /* All text is placed in the center of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+			padding: 0;
+			margin: 0;
+			background-color: #000000;
+                        }
+.navbar a	{							
+		padding: 13px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+		border-left: 1px solid #000000; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+		border-right: 1px solid #000000; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+		text-decoration: none;  /* Removes the default hyperlink styling. */
+		color: white; /* Text color is white */
+		display: block;
+		}
+.navbar li ul 	{
+		display: none;  /* Hides the drop-down menu */
+		height: auto;									
+		margin: 0; /* Aligns drop-down box underneath the menu item */
+		padding: 0; /* Aligns drop-down box underneath the menu item */			
+		}				
+
+.navbar li:hover ul 	{
+                        display: block; /* Displays the drop-down box when the menu item is hovered over */
+                        }
+.navbar li ul li {background-color: #000000;} 
+.navbar li ul li a 	{
+		border-left: 1px solid #666666; 
+		border-right: 1px solid #666666; 
+		border-top: 1px solid #5C5C5C; 
+		border-bottom: 1px solid #666666; 
+		background-color: #000000;
+		}
+				
+.navbar li ul li a:hover	{background-color: #404040;}
+div.tm { font-size: 10px; margin: 10px 0 10px 10px; color: white; text-align: left;}
+div.tm table { margin-top: 5px; color:white;}
+
+div.tm td { padding: 5px 5px 5px 5px; color: white; }
+
+#bleft {
+    width: 120px;
+    height: 270px;
+    float: left;
+	position:static;
+    background:transparent url(images/bui.jpg) no-repeat center; background-size: 100% 100%;	
+    clear: left;
+	
+}
+#bright {
+    width: 120px;
+    height: 600px;
+    float: right;
+    position:static;
+	background:transparent url(images/bui.jpg) no-repeat center; background-size: 100% 100%;
+    clear: right;
+}
+/*<img src="side.gif" alt="Computer man" style="width:120px;height:100px;float:centre;">
+	</br>
+  <img src="side1.gif" alt="Computer man" style="width:120px;height:100px;float:centre;">
+  </br>
+  <img src="bpll.jpg" alt="Computer man" style="width:120px;height:100px;float:centre;">
+  background:transparent url(images/bui.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-image: url(bofy.gif);
+*/
+/*First Team*/
+
+ul.firstteam li{float:left;display:inline-table;}
+img[Attributes Style] {
+    height: 79px;
+    width: 116px;
+}
+Inherited from 
+
+.clearfix{}
+#profileboxes a1 img,.reserves a1 img,.firstteam a1 img{ opacity:.7;filter:alpha(opacity:70);border-bottom:solid 1px #666;margin-bottom:4px}
+#profileboxes a1:hover img,.reserves a1:hover img,.firstteam a1:hover img{opacity:1;filter:alpha(opacity:100)}
+
+ul{list-style-type:disc; padding: 0px; margin : 0px;}
+ul.firstteam li{font-weight:bold;font-size:.85em;border:solid 1px #666;margin:5px 5px ;}
+ul.firstteam li a1{display:block;height:109px;width:116px;text-align:center;color:#ffffff;text-decoration:none;position:relative;}
+ul.firstteam li a1 span{color:#fff}ul.firstteam li a:hover span{color:#c60000}
+
+
+/*Gallery*/
+div.img {
+    margin: 0 0 5px 5px;
+    padding: 5px;
+    
+    height: auto;
+    width: auto;
+
+    text-align: center;
+}	
+
+div.img img {
+    
+    margin: 5px;
+	
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 1px solid;
+}
+
+div.desc {
+ text-align: center;
+  font-weight: normal;
+  width: 675x;
+  margin: 5px;
+}
+
+div.img1 {
+    margin: 0 0 5px 5px;
+    padding: 5px;
+    
+    height: auto;
+    width: auto;
+
+    text-align: center;
+}	
+
+div.img1 img {
+    
+    margin: 5px;
+	float:right;
+    border: 1px solid #ffffff;
+}
+
+div.img1 a:hover img {
+    border: 1px solid;
+}
+
+div.desc1 {
+ text-align: left;
+  font-weight: normal;
+  width: 675x;
+  margin: 5px;
+}
